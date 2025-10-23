@@ -14,7 +14,7 @@ int main()
 	{
 		ShanWanGamepadInput input = gamepad.read_data();
 
-		float steering = -input.analog_stick_left.x;
+		float steering = input.analog_stick_right.x;
 		float throttle = input.analog_stick_right.y; // limit throttle to 100%
 
 		std::cout << "Throttle: " << throttle
